@@ -1,6 +1,6 @@
 {
   "name": "is-class",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Check if function is an ES6 class.",
   "main": "is-class.js",
   "directories": {

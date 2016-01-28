@@ -1,6 +1,6 @@
 {
   "name": "is-class",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Check if function is an ES6 class.",
   "main": "is-class.js",
   "directories": {
@@ -25,7 +25,7 @@
     "url": "https://github.com/miguelmota/is-class/issues"
   },
   "homepage": "https://github.com/miguelmota/is-class",
-  "dependencies": {
+  "devDependencies": {
     "tape": "^3.0.3"
   }
 }

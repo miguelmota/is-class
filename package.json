@@ -25,7 +25,8 @@
     "url": "https://github.com/miguelmota/is-class/issues"
   },
   "homepage": "https://github.com/miguelmota/is-class",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "tape": "^3.0.3"
   }
 }

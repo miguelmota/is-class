@@ -14,14 +14,14 @@ test('isClass', function (t) {
 
   function G() {}
 
-  t['true'](isClass(F));
-  t['false'](isClass(G));
-  t['false'](isClass(''));
-  t['false'](isClass(0));
-  t['false'](isClass(null));
-  t['false'](isClass(undefined));
-  t['false'](isClass(1));
-  t['false'](isClass({}));
-  t['false'](isClass([]));
+  t.true(isClass(F));
+  t.false(isClass(G));
+  t.false(isClass(''));
+  t.false(isClass(0));
+  t.false(isClass(null));
+  t.false(isClass(undefined));
+  t.false(isClass(1));
+  t.false(isClass({}));
+  t.false(isClass([]));
 });
 

@@ -24,6 +24,12 @@ console.log(isClass(F)); // true
 console.log(isClass(G)); // false
 ```
 
+# Test
+
+```bash
+npm test
+```
+
 # License
 
 MIT

@@ -7,7 +7,7 @@
 
   function isClass(fn) {
     return (typeof fn === 'function' &&
-            (/^class\s/.test(toString.call(fn)) ||
+            (/^class(\s|\{\}$)/.test(toString.call(fn)) ||
               (/^.*classCallCheck\(/.test(fnBody(fn)))) // babel.js
             );
   }

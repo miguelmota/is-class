@@ -4,12 +4,13 @@ var test = require('tape');
 var isClass = require('../is-class');
 
 test('isClass', function (t) {
-  t.plan(9);
+  t.plan(10);
 
   class F {}
   function G() {}
 
   t.true(isClass(F));
+  t.true(isClass(class{}));
   t.false(isClass(G));
   t.false(isClass(''));
   t.false(isClass(0));

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=yes">
+  <title>Example</title>
+</head>
+<body>
+  <div id="output"></div>
+  <script src="../is-class.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script type="text/babel">
+  const getMessage = () => "Hello World";
+  document.getElementById('output').innerHTML = getMessage();
+  class Foo {
+
+  }
+
+  console.log(isClass(Foo))
+  </script>
+</body>
+</html>

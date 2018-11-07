@@ -1,4 +1,4 @@
-(function(root) {
+;(function(root) {
   var toString = Function.prototype.toString;
 
   function fnBody(fn) {

@@ -1,15 +1,11 @@
 # is-class
 
-Check if function is an ES6 class.
+> Check if function is an ES6 `class`.
 
 # Install
 
 ```bash
 npm install is-class
-```
-
-```bash
-bower install is-class
 ```
 
 # Usage

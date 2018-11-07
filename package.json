@@ -19,13 +19,15 @@
     "class",
     "es6"
   ],
-  "author": "Miguel Mota <hello@miguelmota.com> (http://www.miguelmota.com/)",
+  "author": "Miguel Mota <hello@miguelmota.com> (https://miguelmota.com/)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/miguelmota/is-class/issues"
   },
   "homepage": "https://github.com/miguelmota/is-class",
   "devDependencies": {
+    "@babel/core": "^7.1.5",
+    "@babel/plugin-transform-classes": "^7.1.0",
     "tape": "^4.9.1"
   }
 }

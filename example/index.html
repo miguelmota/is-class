@@ -10,13 +10,15 @@
   <script src="../is-class.js"></script>
   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
   <script type="text/babel">
-  const getMessage = () => "Hello World";
-  document.getElementById('output').innerHTML = getMessage();
-  class Foo {
+    const getMessage = () => {
+      class Foo {
 
-  }
+      }
 
-  console.log(isClass(Foo))
+      return isClass(Foo)
+    }
+
+    document.getElementById('output').innerHTML = getMessage()
   </script>
 </body>
 </html>

@@ -26,6 +26,6 @@
   },
   "homepage": "https://github.com/miguelmota/is-class",
   "devDependencies": {
-    "tape": "^3.0.3"
+    "tape": "^4.9.1"
   }
 }

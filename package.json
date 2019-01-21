@@ -19,8 +19,15 @@
     "class",
     "es6"
   ],
-  "author": "Miguel Mota <hello@miguelmota.com> (https://miguelmota.com/)",
-  "license": "MIT",
+  "author": {
+    "name": "Miguel Mota",
+    "email": "hello@miguelmota.com",
+    "url": "https://miguelmota.com/"
+  },
+  "license": {
+    "type": "MIT",
+    "url": "https://github.com/miguelmota/is-class/blob/master/LICENSE"
+  },
   "bugs": {
     "url": "https://github.com/miguelmota/is-class/issues"
   },

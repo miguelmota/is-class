@@ -1,35 +1,34 @@
-;(function(root) {
-  var toString = Function.prototype.toString;
+;(function (root) {
+  const toString = Function.prototype.toString
 
-  function fnBody(fn) {
-    return toString.call(fn).replace(/^[^{]*{\s*/,'').replace(/\s*}[^}]*$/,'');
+  function fnBody (fn) {
+    return toString.call(fn).replace(/^[^{]*{\s*/, '').replace(/\s*}[^}]*$/, '')
   }
 
-  function isClass(fn) {
+  function isClass (fn) {
     if (typeof fn !== 'function') {
-      return false;
+      return false
     }
 
     if (/^class[\s{]/.test(toString.call(fn))) {
-      return true;
+      return true
     }
 
     // babel.js classCallCheck() & inlined
-    const body = fnBody(fn);
-    return (/classCallCheck\(/.test(body) || /TypeError\("Cannot call a class as a function"\)/.test(body));
+    const body = fnBody(fn)
+    return (/classCallCheck\(/.test(body) || /TypeError\("Cannot call a class as a function"\)/.test(body))
   }
 
   if (typeof exports !== 'undefined') {
     if (typeof module !== 'undefined' && module.exports) {
-      exports = module.exports = isClass;
+      exports = module.exports = isClass
     }
-    exports.isClass = isClass;
+    exports.isClass = isClass
   } else if (typeof define === 'function' && define.amd) {
-    define([], function() {
-      return isClass;
-    });
+    define([], function () {
+      return isClass
+    })
   } else {
-    root.isClass = isClass;
+    root.isClass = isClass
   }
-
 })(this);

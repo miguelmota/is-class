@@ -6,10 +6,17 @@
   }
 
   function isClass(fn) {
-    return (typeof fn === 'function' &&
-            (/^class[\s{]/.test(toString.call(fn)) ||
-              (/classCallCheck\(/.test(fnBody(fn)))) // babel.js
-            );
+    if (typeof fn !== 'function') {
+      return false;
+    }
+
+    if (/^class[\s{]/.test(toString.call(fn))) {
+      return true;
+    }
+
+    // babel.js classCallCheck() & inlined
+    const body = fnBody(fn);
+    return (/classCallCheck\(/.test(body) || /TypeError\("Cannot call a class as a function"\)/.test(body));
   }
 
   if (typeof exports !== 'undefined') {

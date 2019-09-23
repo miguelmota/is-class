@@ -3,6 +3,8 @@
   "version": "0.0.8",
   "description": "Check if function is an ES6 class.",
   "main": "is-class.js",
+  "types": "index.d.ts",
+  "typings": "index.d.ts",
   "directories": {
     "test": "test"
   },
